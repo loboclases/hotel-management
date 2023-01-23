@@ -13,4 +13,5 @@ public class Valuation {
   private Float value;
   private String comment;
   private Guest author;
+  private ValuationStatus status;
 }

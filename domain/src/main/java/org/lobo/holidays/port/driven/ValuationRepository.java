@@ -6,6 +6,7 @@ import reactor.core.publisher.Mono;
 
 /**
  * The interface Valuation repository.
+ *
  * @author joseluis.anton
  */
 public interface ValuationRepository {
@@ -18,6 +19,22 @@ public interface ValuationRepository {
    * @return the mono
    */
   Mono<Valuation> createValuation(Valuation valuation, Long hotelId);
+
+  /**
+   * Update valuation mono.
+   *
+   * @param valuation the valuation
+   * @return the mono
+   */
+  Mono<Valuation> updateValuation(Valuation valuation);
+
+  /**
+   * Find valuation mono.
+   *
+   * @param valuationId the valuation id
+   * @return the mono
+   */
+  Mono<Valuation> findValuation(Long valuationId);
 
   /**
    * Find valuation by hotel id.
