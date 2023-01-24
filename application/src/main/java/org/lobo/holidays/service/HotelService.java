@@ -1,9 +1,11 @@
 package org.lobo.holidays.service;
 
+import java.io.Serial;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.lobo.holidays.domain.Hotel;
 import org.lobo.holidays.port.driven.HotelRepository;
+import org.lobo.holidays.port.driven.UseCase;
 import org.lobo.holidays.usecase.CreateHotelUseCase;
 import org.lobo.holidays.usecase.command.CreateHotelCommand;
 import reactor.core.publisher.Mono;
@@ -22,6 +24,7 @@ public class HotelService implements CreateHotelUseCase {
    * {@inheritDoc}
    */
   @Override
+  @UseCase
   public Mono<Hotel> createHotel(CreateHotelCommand createHotelCommand) {
     Hotel hotel=new Hotel();
     hotel.setName(createHotelCommand.getName());

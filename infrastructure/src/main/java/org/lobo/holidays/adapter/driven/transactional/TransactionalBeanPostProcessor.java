@@ -1,4 +1,4 @@
-package org.lobo.holidays.adapter.driving.transactional;
+package org.lobo.holidays.adapter.driven.transactional;
 
 import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.beans.BeansException;

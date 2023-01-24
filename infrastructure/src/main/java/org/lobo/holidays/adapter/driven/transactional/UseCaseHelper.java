@@ -1,4 +1,4 @@
-package org.lobo.holidays.adapter.driving.transactional;
+package org.lobo.holidays.adapter.driven.transactional;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;

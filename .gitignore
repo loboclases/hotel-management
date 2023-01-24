@@ -25,4 +25,9 @@ hs_err_pid*
 # intellij
 .idea
 .idea/*
-
+.target
+/shelf/
+/workspace.xml
+application/target/
+domain/target/
+infrastructure/target/
